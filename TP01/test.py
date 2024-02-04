@@ -1,6 +1,7 @@
 from sklearn.model_selection import KFold
-kf=KFold(n_splits=3,shuffle=True)
+kf=KFold(n_splits=5,shuffle=True)
 X=[i for i in range(20)]
 print(X)
 for learn,test in kf.split(X):
-    print("app : ",learn," test ",test)
+    print("learn: ",learn)
+    print("test: ",test)

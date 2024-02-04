@@ -7,7 +7,7 @@ X=irisData.data
 Y=irisData.target
 
 #kf=KFold(len(X),n_folds=10,shuffle=True)
-kf=KFold(n_splits=3,shuffle=False)
+kf=KFold(n_splits=10,shuffle=True)
 scores=[]
 for k in range(1,30):
     score=0
